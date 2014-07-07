@@ -2,7 +2,7 @@ versioninfo
 {
 	"editorversion" "400"
 	"editorbuild" "6432"
-	"mapversion" "6"
+	"mapversion" "8"
 	"formatversion" "100"
 	"prefab" "0"
 }
@@ -20,7 +20,7 @@ viewsettings
 world
 {
 	"id" "1"
-	"mapversion" "6"
+	"mapversion" "8"
 	"classname" "worldspawn"
 	"skyname" "sky_black_nofog"
 	"maxpropscreenwidth" "-1"
@@ -125,17 +125,17 @@ world
 				"subdiv" "0"
 				normals
 				{
-					"row0" "0 0 0 0 0 0 0 0 0 0 0 0 0 0 1"
-					"row1" "0 0 0 0 0 0 0 0 0 0 0 0 0 0 1"
-					"row2" "0 0 0 0 0 0 0 0 0 0 0 0 0 0 1"
+					"row0" "0 0 1 0 0 0 0 0 0 0 0 0 0 0 1"
+					"row1" "0 0 1 0 0 0 0 0 0 0 0 0 0 0 1"
+					"row2" "0 0 1 0 0 0 0 0 0 0 0 0 0 0 1"
 					"row3" "0 0 0 0 0 0 0 0 0 0 0 0 0 0 0"
 					"row4" "0 0 0 0 0 0 0 0 0 0 0 0 0 0 0"
 				}
 				distances
 				{
-					"row0" "0 0 0 0 25"
-					"row1" "0 0 0 0 25"
-					"row2" "0 0 0 0 10"
+					"row0" "5 0 0 0 25"
+					"row1" "5 0 0 0 25"
+					"row2" "5 0 0 0 10"
 					"row3" "0 0 0 0 0"
 					"row4" "0 0 0 0 0"
 				}
