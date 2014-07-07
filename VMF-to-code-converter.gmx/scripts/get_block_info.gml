@@ -93,4 +93,36 @@ ds_map_add(map,"Poly"+string(ls)+"Face"+string(o)+"Co"+string(8),global.cord8[ls
 ds_map_add(map,"Poly"+string(ls)+"Face"+string(o)+"Co"+string(9),global.cord9[ls,o]);
 }
 ds_map_secure_save(map,get_save_filename("",""));
+bfile=file_text_open_write(get_save_filename("",""));
+for(ls=1;ls<=global.l;ls++)
+{
+file_text_write_string(bfile,"Polygon:");
+file_text_writeln(bfile);
+                         for(o=1;o<=i;o++)
+                         {
+                         file_text_write_string(bfile,"Face:");
+                         file_text_writeln(bfile);
+                         file_text_write_string(bfile,"Co:");
+                         file_text_write_real(bfile,ds_map_find_value(map,"Poly"+string(ls)+"Face"+string(o)+"Co"+string(1)));
+                         file_text_write_string(bfile,"Co:");
+                         file_text_write_real(bfile,ds_map_find_value(map,"Poly"+string(ls)+"Face"+string(o)+"Co"+string(2)));
+                         file_text_write_string(bfile,"Co:");
+                         file_text_write_real(bfile,ds_map_find_value(map,"Poly"+string(ls)+"Face"+string(o)+"Co"+string(3)));
+                         file_text_write_string(bfile,"Co:");
+                         file_text_write_real(bfile,ds_map_find_value(map,"Poly"+string(ls)+"Face"+string(o)+"Co"+string(4)));
+                         file_text_write_string(bfile,"Co:");
+                         file_text_write_real(bfile,ds_map_find_value(map,"Poly"+string(ls)+"Face"+string(o)+"Co"+string(5)));
+                         file_text_write_string(bfile,"Co:");
+                         file_text_write_real(bfile,ds_map_find_value(map,"Poly"+string(ls)+"Face"+string(o)+"Co"+string(6)));
+                         file_text_write_string(bfile,"Co:");
+                         file_text_write_real(bfile,ds_map_find_value(map,"Poly"+string(ls)+"Face"+string(o)+"Co"+string(7)));
+                         file_text_write_string(bfile,"Co:");
+                         file_text_write_real(bfile,ds_map_find_value(map,"Poly"+string(ls)+"Face"+string(o)+"Co"+string(8)));
+                         file_text_write_string(bfile,"Co:");
+                         file_text_write_real(bfile,ds_map_find_value(map,"Poly"+string(ls)+"Face"+string(o)+"Co"+string(9)));
+                         file_text_writeln(bfile);
+                         }
+file_text_writeln(bfile);
+}
+file_text_close(bfile);
 i=1;
